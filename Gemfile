@@ -1,7 +1,9 @@
 source :rubygems
 
 gem 'rails',         '3.2.6'
-gem 'sqlite3'
+# gem 'sqlite3'
+# gem 'mysql2'
+gem 'pg'
 gem 'resque',        '1.20.0', require: 'resque/server'
 gem 'git'
 gem 'will_paginate'

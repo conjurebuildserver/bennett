@@ -2,9 +2,27 @@ development:
   adapter: sqlite3
   database: db/development.sqlite3
 
+# production:
+#   adapter: sqlite3
+#   database: db/production.sqlite3
+
+# production:
+#   adapter: mysql2
+#   encoding: utf8
+#   reconnect: false
+#   database: bennett_production
+#   pool: 5
+#   username: root
+#   password:
+#   host: localhost
+
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: bennett_production
+  host: localhost
+  pool: 5
+
 
 test:
   adapter: sqlite3

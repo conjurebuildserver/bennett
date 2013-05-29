@@ -59,9 +59,11 @@ Bennett::Application.configure do
   config.active_support.deprecation = :notify
 
   config.action_mailer.delivery_method = :sendmail
-  HOST = "ci.belighted.com"
+  HOST = "build.conjure.co.uk"
+  PORT = 4000
   config.action_mailer.default_url_options = {
     :host => HOST,
+    :port => PORT,
   }
-  config.action_mailer.asset_host = "http://#{HOST}"
+  config.action_mailer.asset_host = "http://#{HOST}:#{PORT}"
 end
